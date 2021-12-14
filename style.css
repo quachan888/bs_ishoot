@@ -7,7 +7,7 @@
     position: relative;
 }
 
-#Portfolio_section .card::before {
+#Portfolio .card::before {
     content: "";
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
@@ -16,6 +16,6 @@
     height: 100%;
 }
 
-#Portfolio_section .card:hover::before {
+#Portfolio .card:hover::before {
     content: none;
 }
