@@ -38,7 +38,7 @@
                 <div class="card-title display-1 fw-bold">Shotting Your Memories.</div>
                 <p class="card-text text-secondary mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quae optio ut incidunt repudiandae suscipit hic? Sint dignissimos repudiandae vel? Assumenda dolore quasi blanditiis. Ducimus quasi vel ratione illum numquam.</p>
                 <div class="d-flex flex-sm-row flex-column mt-4">
-                    <button class="btn btn-danger btn-lg shadow"><i class="bi bi-envelope"></i> Email Me Here</button>
+                    <button class="btn btn-danger btn-lg shadow" type="button" data-bs-toggle="modal" data-bs-target="#email"><i class="bi bi-envelope"></i> Email Me Here</button>
                     <span class="fs-2 mt-5 mt-sm-0">
                         <a href="#"><i class="bi bi-facebook text-dark ms-sm-5 ms-2"></i></a>
                         <a href="#"><i class="bi bi-twitter text-dark ms-sm-5 ms-2"></i></a>
@@ -59,6 +59,67 @@
         </div>
 
         <!-- HEADER > FORM  -->
+        <div class="modal fade" id="email" tabindex="-1" aria-hidden="true">
+
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modal-title">Book a shoot</div>
+                        <button class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" class="row g-3">
+                            <div class="col-md-6">
+                                <label for="firstname" class="form-label">First name</label>
+                                <input type="text" id="firstname" class="form-control" placeholder="Jone">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastname" class="form-label">Last name</label>
+                                <input id="lastname" type="text" class="form-control" placeholder="Doe">
+                            </div>
+                            <div class="col-12">
+                                <label for="" class="form-label">Address</label>
+                                <input type="text" class="form-control" placeholder="123 Main St.">
+                            </div>
+                            <div class="col-12">
+                                <label for="" class="form-label">Address 2</label>
+                                <input type="text" class="form-control" placeholder="Shoot location: Apartment, Stuio, floor...">
+                            </div>
+                            <div class="col-md-5">
+                                <label for="" class="form-label">City</label>
+                                <input type="text" class="form-control" placeholder="City">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="" class="form-label">State</label>
+                                <select name="" id="" class="form-select">
+                                    <option value="" selected>Choose.. </option>
+                                    <option value="">State 1</option>
+                                    <option value="">State 2</option>
+                                    <option value="">State 3</option>
+                                    <option value="">State 4</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="" class="form-label">Zip code</label>
+                                <input type="text" class="form-control" placeholder="12345">
+                            </div>
+                            <div class="col-12">
+                                <a href="#" class="text-link" role="button" data-bs-toggle"modal" data-bs-target="#terms">Terms of services</a>
+                                <div class="form-check">
+                                    <input id="agree" type="checkbox" class="form-check-input">
+                                    <label for="agree" class="form-check-label">I agree</label>
+                                </div>
+                            </div>
+                            <div class="col-12 d-grid">
+                                <button class="btn btn-primary block" type="submit" disabled>Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
         <!-- HEADER > FORM > TERMS OF SERVICE -->
     </header>
 
